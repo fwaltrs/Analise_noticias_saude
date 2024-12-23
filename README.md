@@ -22,4 +22,5 @@ Após coletar o dados, fizemos uma análise descritiva:
 
 -> *TF (Term Frequency)*: Mede a frequência de uma palavra em um documento.
 -> *IDF (Inverse Document Frequency)*: Mede a importância de uma palavra em todo o corpus. Palavras comuns em muitos documentos têm um valor IDF baixo.
+
 4. Depois usamos a vetorização TF-IDF para calcular a similaridade entre os subtítulos com base nas tags. 
