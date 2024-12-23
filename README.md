@@ -18,5 +18,8 @@ Após coletar o dados, fizemos uma análise descritiva:
 
 1. Frequência de notícias por período (março-2024 a dezembro 2024)
 2. Top 20 Tags mais utilizadas nas notícias entre esse período
-3. Analisamos a Similiridade Textual entre os subtítulos das notícias, com objetivo de encontrar as machentes com subtítulos parecidos
-4. 
+3. Analisamos a Similiridade Textual entre os subtítulos das notícias, com objetivo de encontrar as manchetes com subtítulos parecidos para isto usando a biblioteca TfidfVectorizer do Python que é usada para converter uma coleção de documentos de texto em uma matriz de características. Basicamente, TF-IDF é uma técnica que reflete a importância de uma palavra em um documento em relação a uma coleção de documentos (corpus). Ela é composta por duas partes:
+
+-> *TF (Term Frequency)*: Mede a frequência de uma palavra em um documento.
+-> *IDF (Inverse Document Frequency)*: Mede a importância de uma palavra em todo o corpus. Palavras comuns em muitos documentos têm um valor IDF baixo.
+4. Depois usamos a vetorização TF-IDF para calcular a similaridade entre os subtítulos com base nas tags. 
